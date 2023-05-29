@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .cards {
+            margin: 20px;
+            border: 2px solid black;
+            width: 300px;
+            border-radius: 25px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        img {
+            width: 90%;
+            height: 400px;
+            display: block;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script src="index.js"></script>
+
+    <script>
+        document.write("<div class='container'>")
+        products.map((elements) => {
+            document.write("<div class='cards'>")
+            document.write(`<h1>${elements.name}</h1><h1>${elements.model}</h1><img src="${elements.img}" alt="">`)
+            document.write("</div>")
+        })
+        document.write("</div>")
+
+    </script>
+
+</body>
+
+</html>
